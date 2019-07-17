@@ -1,0 +1,28 @@
+---
+layout: archive
+---
+
+{{ content }}
+
+<h2 class="archive__subtitle">{{ site.data.ui-text[site.locale].recent_updates | default: "Recent Updates:" }}</h2>
+<h2>Blog</h2>
+{% assign sortedPosts = site.posts | sort: 'date' | reverse %}
+{% for post in sortedPosts limit:2%}
+    {% include archive-home.html %}
+{% endfor %}
+
+<h4 class="archive__subtitle"></h4>
+<h2>Projects</h2>
+{% assign sortedProjects = site.projects | sort: 'date' | reverse %}
+{% for post in sortedProjects limit:2%}
+    {% include archive-home.html %}
+{% endfor %}
+
+<h4 class="archive__subtitle"></h4>
+<h2>Notes</h2>
+{% assign sortedNotes = site.notes | sort: 'date' | reverse %}
+{% for post in sortedNotes limit:2%}
+    {% include archive-home.html %}
+{% endfor %}
+
+{% include paginator.html %}

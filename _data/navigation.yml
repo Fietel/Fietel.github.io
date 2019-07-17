@@ -1,0 +1,12 @@
+main:
+  - title: "Projects"
+    url: /projects/
+
+  - title: "Blog"
+    url: /blog/
+
+  - title: "Notes"
+    url: /notes/
+
+  - title: "About"
+    url: /about/

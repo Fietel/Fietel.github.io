@@ -1,0 +1,180 @@
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely edit after that. If you find
+# yourself editing this file very often, consider using Jekyll's data files
+# feature for the data you need to update frequently.
+#
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
+
+# Site settings
+# These are used to personalize your new site. If you look in the HTML files,
+# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
+# You can create any custom variable you would like, and they will be accessible
+# in the templates via {{ site.myvariable }}.
+title: Coming soon
+title_separator: "|"
+locale: "en"
+# baseurl: ""
+# repository: "Fietel/Fietel.github.io"
+# headscripts: can be used for jquery etc
+logo: "/assets/images/mylatency.png" #logo in front of title
+email: fieteblog@gmail.com
+description: Personal blog, mainly discussing topics related to machine learning, with a focus on anomaly detection with GANs #used for meta descriptions
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://fietel.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+search: true
+#breadcrumbs: true #adds breadcrumbs, add permalinks with categories for best results
+
+github_username: fietel
+linkedin_username: fiete-l%C3%BCer-352566169
+# Build settings
+markdown: kramdown
+
+plugins:
+  - jekyll-feed
+  - jekyll-paginate
+  - jekyll-archives
+  - jekyll-include-cache
+
+whitelist:
+  - jekyll-feed
+  - jekyll-paginate
+  - jekyll-archives
+  - jekyll-include-cache
+
+kramdown:
+  math_engine: mathjax
+
+#theme: minimal-mistakes-jekyll
+remote_theme: "mmistakes/minimal-mistakes@4.16.4"
+
+# Exclude from processing.
+# The following items will not be processed, by default. Create a custom list
+# to override the default setting.
+# exclude:
+#   - Gemfile
+#   - Gemfile.lock
+#   - node_modules
+#   - vendor/bundle/
+#   - vendor/cache/
+#   - vendor/gems/
+#   - vendor/ruby/
+
+collections:
+  projects:
+    output: true
+    permalink: /:collection/:path/
+  blog:
+    output: true
+    permalink: /:collection/:path/
+  notes:
+    output: true
+    permalink: /:collection/:path/
+
+paginate: 5
+paginate_path: /page:num/
+defaults:
+  # _posts
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: single
+      author_profile: true
+      read_time: true
+      comments: true
+      share: true
+      related: true
+      mathjax: true
+  # _pages
+  - scope:
+      path: ""
+      type: pages
+    values:
+      layout: single
+      author_profile: true
+  # _home
+  - scope:
+      path: ""
+      type: home
+    values:
+      layout: single
+      author_profile: true
+  #_projects
+  - scope:
+      path: ""
+      type: projects
+    values:
+      layout: single
+      author_profile: true
+      # comments: true
+  #_blog
+  - scope:
+      path: ""
+      type: blog
+    values:
+      layout: single
+      author_profile: true
+      comments: true
+  #_blog
+  - scope:
+      path: ""
+      type: notes
+    values:
+      layout: single
+      author_profile: true
+      comments: true
+
+minimal_mistakes_skin: "dark" # "default","air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum" "sunrise"
+
+# Site Author
+author:
+  name: "Fiete"
+  avatar: "assets/images/dis_is_me.png"
+  bio: "Welcome! Opinions expressed on this site are solely my own and all the research I post might also be totally wrong :)"
+  email: fieteblog@gmail.com
+  links:
+    - label: "LinkedIn"
+      icon: "fab fa-fw fa-linkedin"
+      url: "https://www.linkedin.com/in/fiete-l%C3%BCer-352566169/"
+
+footer:
+  links:
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/fietel"
+    - label: "LinkedIn"
+      icon: "fab fa-fw fa-linkedin"
+      url: "https://www.linkedin.com/in/fiete-l%C3%BCer-352566169/"
+
+permalink: /:categories/:title/
+
+include:
+  - _pages
+  - files
+# Build:
+category_archive:
+  type: liquid
+  path: /categories/
+tag_archive:
+  type: liquid
+  path: /tags/
+
+# Analytics
+analytics:
+  provider: "google-gtag"
+  google:
+    tracking_id: "UA-143959393-1"
+    anonymize_ip: false # default
+
+jekyll-archives:
+  layout: archive
+  permalinks: "/:year/"
+#footer: links: for footer links
+# TODO:
+# - add disqus https://desiredpersona.com/disqus-comments-jekyll/ and https://mmistakes.github.io/minimal-mistakes/docs/configuration/ for staticman
+# -reCaptcha https://mmistakes.github.io/minimal-mistakes/docs/configuration/ if required
+# -seo https://mmistakes.github.io/minimal-mistakes/docs/configuration/
+# - analytics
