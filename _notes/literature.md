@@ -8,10 +8,16 @@ permalink: /notes/papers
 
 ## Standard references
 
-| Name                                                    | Description | Authors | Year |
-| ------------------------------------------------------- | ----------- | ------- | ---- |
-| [Deep Learning Book](https://www.deeplearningbook.org/) |
+| Name                                                    | Description        | Authors                       | Year |
+| ------------------------------------------------------- | ------------------ | ----------------------------- | ---- |
+| [Deep Learning Book](https://www.deeplearningbook.org/) | Introduction to DL | Goodfellow, Bengio, Courville | 2016 |
 
-## D(Potentially) interesting
+## (Potentially) interesting books
+
+| Name | Description | Authors | Year |
+| ---- | ----------- | ------- | ---- |
+
+
+|
 
 ## TODO

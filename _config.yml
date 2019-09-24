@@ -13,7 +13,7 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: Coming soon
+title: earning progress
 title_separator: "|"
 locale: "en"
 # baseurl: ""
@@ -133,7 +133,7 @@ minimal_mistakes_skin: "dark" # "default","air", "aqua", "contrast", "dark", "di
 author:
   name: "Fiete"
   avatar: "assets/images/dis_is_me.png"
-  bio: "Welcome! Opinions expressed on this site are solely my own and all the research I post might also be totally wrong :)"
+  bio: "Hey there! I pretend to process language naturally and try to detect anomalies in medical data. Usually, I horribly fail at both which convinces others that I am a human being. Opinions expressed on this site are solely my own and, looking back at the history of humanity, almost all the content I post will most likely be totally wrong."
   email: fieteblog@gmail.com
   links:
     - label: "LinkedIn"
