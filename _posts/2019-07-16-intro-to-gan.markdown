@@ -8,7 +8,7 @@ classes: wide
 #   overlay_image: /assets/images/vanillaGAN.png #alternativ: image:
 #   excerpt: "Introduction to GANs"
 #   image_description: "Basic architecture of a GAN"
-#caption: "Photo credit: [**y**](x)"
+# caption: "Photo credit: [**y**](x)"
 ---
 
 There are a ton of introductions to Generative Adversarial Networks (GANs) out there. I highly recommend to read the [original paper][gan-paper] and some follow up papers. Which one you might find interesting will most likely depend on your application. Generally, rather recent developments like the [Wasserstein GAN (WGAN)][wgan-paper] and some of its' [improvements][improved-wgan] should not only be considered because of their performances, but also because of the additional insights into the whole subject.
@@ -45,13 +45,6 @@ I will skip the formal definition of the respective goals of each network and th
 Even though GANs have received a lot of attention due to their impressive results in the image domain, especially image generation which has been notoriously difficult, training has been difficult and remains non-trivial.
 A big chunk of this difficulty originates from the underlying model: In most models, we use some convex cost function to determine gradients leading us to some (at least local) optimum. These algorithms are not necessarily fit to find a respective Nash Equiilbrium, which leads to non-convergence issues.
 
-<!-- {% highlight ruby %}
-def print_hi(name)
-puts "Hi, #{name}"
-end
-print_hi('Tom')
-#=> prints 'Hi, Tom' to STDOUT.
-{% endhighlight %} -->
 
 [vincent-wgan]: https://vincentherrmann.github.io/blog/wasserstein/
 [lilian-wgan]: https://lilianweng.github.io/lil-log/2017/08/20/from-GAN-to-WGAN.html
