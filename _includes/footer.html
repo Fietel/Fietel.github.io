@@ -4,15 +4,10 @@
     <li>
       <strong>{{ site.data.ui - text[site.locale].follow_label }}</strong>
     </li>
-    {% endif %} {% if site.footer.links %} {% for link in site.footer.links %}
-    {% if link.label and link.url %}
+    {% endif %} {% if site.footer.links %} {% for link in site.footer.links %} {% if link.label and link.url %}
     <li>
       <a href="{{ link.url }}" rel="nofollow noopener noreferrer"
-        ><i
-          class="{{ link.icon | default: 'fas fa-link' }}"
-          aria-hidden="true"
-        ></i>
-        {{ link.label }}</a
+        ><i class="{{ link.icon | default: 'fas fa-link' }}" aria-hidden="true"></i> {{ link.label }}</a
       >
     </li>
     {% endif %} {% endfor %} {% endif %}
@@ -24,31 +19,22 @@
         href="{% if site.atom_feed.path %}{{ site.atom_feed.path }}{% else %}{{
           '/feed.xml' | relative_url
         }}{% endif %}"
-        ><i class="fas fa-fw fa-rss-square" aria-hidden="true"></i> {{
-        site.data.ui - text[site.locale].feed_label | default: "Feed" }}</a
+        ><i class="fas fa-fw fa-rss-square" aria-hidden="true"></i>
+        {{ site.data.ui - text[site.locale].feed_label | default: "Feed" }}</a
       >
     </li>
   </ul>
 </div>
 <small>
-  Feel free to contact me if you have any questions! The easiest way to contact
-  me is probably to send me a
+  Feel free to contact me if you have any questions! The easiest way to contact me is probably to send me a
   <a href="mailto:{{ site.author.email }}" rel="nofollow noopener noreferrer"
-    ><i
-      class="{{ link.icon | default: 'fas fa-envelope' }}"
-      aria-hidden="true"
-    ></i>
-    Mail</a
+    ><i class="{{ link.icon | default: 'fas fa-envelope' }}" aria-hidden="true"></i> Mail</a
   >!
 </small>
 
 <div class="page__footer-copyright">
-  &copy; {{ site.time | date: "%Y" }} {{ site.name | default: site.title }}. {{
-  site.data.ui - text[site.locale].powered_by | default: "Powered by" }}
+  &copy; {{ site.time | date: "%Y" }} {{ site.name | default: site.title }}.
+  {{ site.data.ui - text[site.locale].powered_by | default: "Powered by" }}
   <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp;
-  <a
-    href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/"
-    rel="nofollow"
-    >Minimal Mistakes</a
-  >.
+  <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.
 </div>
