@@ -6,7 +6,7 @@ GEM
       i18n (>= 0.7, < 2)
       minitest (~> 5.1)
       tzinfo (~> 1.1)
-      zeitwerk (~> 2.1,>=2.1.8)
+      zeitwerk (~> 2.1, >= 2.1.8)
     addressable (2.7.0)
       public_suffix (>= 2.0.2, < 5.0)
     colorator (1.1.0)
@@ -85,7 +85,7 @@ GEM
       jemoji (~> 0.10)
     minitest (5.12.0)
     multipart-post (2.1.1)
-    nokogiri (1.10.4)
+    nokogiri (1.10.10)
       mini_portile2 (~> 2.4.0)
     octokit (4.14.0)
       sawyer (~> 0.8.0, >= 0.5.3)
@@ -122,6 +122,7 @@ DEPENDENCIES
   jekyll-paginate
   minima (~> 2.0)
   minimal-mistakes-jekyll (= 4.16.4)
+  nokogiri (>= 1.10.8)
   tzinfo-data
 
 BUNDLED WITH
