@@ -8,12 +8,12 @@ source "https://rubygems.org"
 #
 # This will help ensure the proper Jekyll version is running.
 # Happy Jekylling!
-gem "jekyll", "~> 3.8.5"
+gem "jekyll", "~> 4.2.0"
 
 # This is the default theme for new Jekyll sites. You may change this to anything you like.
-gem "minima", "~> 2.0"
-gem "minimal-mistakes-jekyll", "4.16.4"
-gem "nokogiri", ">= 1.10.8"
+gem "minima", "~> 2.5.1"
+gem "minimal-mistakes-jekyll", "4.22.0"
+gem "nokogiri", ">= 1.11.1"
 
 
 # If you want to use GitHub Pages, remove the "gem "jekyll"" above and
@@ -22,7 +22,7 @@ gem "nokogiri", ">= 1.10.8"
 
 # If you have any plugins, put them here!
 group :jekyll_plugins do
-  gem "jekyll-feed", "~> 0.6"  
+  gem "jekyll-feed", "~> 0.6"
   gem "jekyll-paginate"
   gem "jekyll-archives"
   gem "jekyll-include-cache"
