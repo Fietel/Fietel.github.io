@@ -13,7 +13,7 @@ gem "jekyll", "~> 4.2.0"
 # This is the default theme for new Jekyll sites. You may change this to anything you like.
 gem "minima", "~> 2.5.1"
 gem "minimal-mistakes-jekyll", "4.22.0"
-gem "nokogiri", ">= 1.11.1"
+gem "nokogiri", ">= 1.13.6"
 
 
 # If you want to use GitHub Pages, remove the "gem "jekyll"" above and
@@ -34,3 +34,5 @@ gem "tzinfo-data", platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 # Performance-booster for watching directories on Windows
 gem "wdm", "~> 0.1.0" if Gem.win_platform?
 
+
+gem "webrick", "~> 1.7"

@@ -38,7 +38,7 @@ Here, _x_ is the data from our real distribution, _z_ some noise (usually $z\sim
 
 In summary, $\mathcal{G}$ and $\mathcal{D}$ fight to reduce or increase the log-likelihood of a correct prediction of D. This fight will theoretically end up at a saddle point which is a minimum with respect to the strategy of G and a maximum with respect to the strategy of D.
 
-I will skip the formal definition of the respective goals of each network and their loss functions and other practical hints, since these are commonly found in blog entries, the original paper or [other work you will most likely stumble upon][link-zu-salismus-paper]. Before connecting this with the more important bits required for our anomaly detection, I would like to introduce one of the more common obstacles during training: mode collapse.
+I will skip the formal definition of the respective goals of each network and their loss functions and other practical hints, since these are commonly found in blog entries, the original paper or [other work you will most likely stumble upon][salisman-improved-gan]. Before connecting this with the more important bits required for our anomaly detection, I would like to introduce one of the more common obstacles during training: mode collapse.
 
 ### Mode Collapse
 
@@ -51,3 +51,4 @@ A big chunk of this difficulty originates from the underlying model: In most mod
 [gan-paper]: https://papers.nips.cc/paper/5423-generative-adversarial-nets.pdf
 [wgan-paper]: https://arxiv.org/abs/1701.07875
 [improved-wgan]: https://arxiv.org/abs/1704.00028
+[salisman-improved-gan]: https://arxiv.org/abs/1606.03498
