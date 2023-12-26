@@ -5,8 +5,8 @@ main:
   - title: "Blog"
     url: /blog/
 
-  - title: "Notes"
-    url: /notes/
+  - title: "Activity"
+    url: /activity/
 
   - title: "About"
     url: /about/
